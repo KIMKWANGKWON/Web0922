@@ -1,0 +1,38 @@
+h1 {
+    font-size : 45px;
+    text-align : center;
+    border-bottom : 1px gray solid;
+    margin : 0;
+    text-decoration : none;
+}
+div {
+    font-size : 15px;
+}
+#grid ol {
+    width : 100px;
+    margin : 0;
+    padding : 20px;
+    border-right : 0px solid gray;
+}
+#article {
+    padding-left : 25px;
+}
+#grid {
+    display : grid;
+    height : 100%;
+    grid-template-columns : 140px 1fr;
+}
+#menu {
+    border-right : 1px solid gray;
+}
+@media(max-width:800px){
+#grid {
+    display : block;
+}
+#grid #menu {
+    border-right : none;
+}
+h1 {
+    border-bottom : none;
+}
+}
